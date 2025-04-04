@@ -53,6 +53,7 @@ Backend-Interview-Challenges/
 │   ├── main.go                 # Main entry point
 │   ├── runner.go               # Algorithm problem runners
 │   ├── runner_oop.go           # OOP problem runners
+│   ├── runner_datastructures.go # Data structure problem runners
 │   ├── listing.go              # Problem listing
 │   └── usage.go                # Usage instructions
 │
@@ -72,7 +73,13 @@ Backend-Interview-Challenges/
 │   │   ├── observerpattern/    # Observer pattern for newsletter system
 │   │   └── singleton/          # Singleton pattern with dependency injection
 │   │
-│   ├── datastructures/         # Data structure implementations (Coming soon)
+│   ├── datastructures/         # Data structure implementations
+│   │   ├── linkedlist/         # Linked list implementation
+│   │   ├── stackqueue/         # Stack and queue implementations
+│   │   ├── binarysearchtree/   # Binary search tree implementation
+│   │   ├── hashtable/          # Hash table implementation
+│   │   └── graph/              # Graph implementation with algorithms
+│   │
 │   └── systemdesign/           # System design challenges (Coming soon)
 ```
 
@@ -93,12 +100,12 @@ Backend-Interview-Challenges/
 4. **Observer Pattern** - Create a newsletter subscription system
 5. **Singleton & Dependency Injection** - Database connection pool implementation
 
-### Data Structures (Coming Soon)
-- Linked List - Implementation and operations
-- Stack & Queue - Implementation and applications
-- Binary Search Tree - Implementation and traversals
-- Graph - Representation and algorithms
-- Hash Table - Custom implementation
+### Data Structures
+1. **Linked List** - Implementation and basic operations
+2. **Stack & Queue** - Implementation with array and linked list approaches
+3. **Binary Search Tree** - Implementation with traversal and search algorithms
+4. **Hash Table** - Implementation with collision handling
+5. **Graph** - Implementation with BFS, DFS, and shortest path algorithms
 
 ### System Design (Coming Soon)
 - Rate Limiter - Design a rate limiting system
@@ -130,6 +137,15 @@ Run a specific OOP design problem:
 ./interview-challenges oop factorypattern
 ./interview-challenges oop observerpattern
 ./interview-challenges oop singleton
+```
+
+Run a specific data structure implementation:
+```bash
+./interview-challenges datastructures linkedlist
+./interview-challenges datastructures stackqueue
+./interview-challenges datastructures binarysearchtree
+./interview-challenges datastructures hashtable
+./interview-challenges datastructures graph
 ```
 
 ## Contributing
