@@ -33,19 +33,26 @@ This repository aims to help backend developers prepare for technical interviews
 ```bash
 git clone https://github.com/yasin-yalcin-dev/Backend-Interview-Challenges.git
 cd Backend-Interview-Challenges
+```
 
-Build the project:
+2. Build the project:
+```bash
+go build -o interview-challenges ./cmd
+```
 
-bashCopygo build -o interview-challenges ./cmd
+3. Run the tool:
+```bash
+./interview-challenges list
+```
 
-Run the tool:
+## Project Structure
 
-bashCopy./interview-challenges list
-Project Structure
-CopyBackend-Interview-Challenges/
+```
+Backend-Interview-Challenges/
 ├── cmd/                        # Command-line tool files
 │   ├── main.go                 # Main entry point
-│   ├── runner.go               # Problem runners
+│   ├── runner.go               # Algorithm problem runners
+│   ├── runner_oop.go           # OOP problem runners
 │   ├── listing.go              # Problem listing
 │   └── usage.go                # Usage instructions
 │
@@ -58,57 +65,83 @@ CopyBackend-Interview-Challenges/
 │   │   ├── twosum/             # Find indices of two numbers that add up to target
 │   │   └── firstrepeatingcharacter/ # Find first repeating character in a string
 │   │
+│   ├── oop/                    # Object-oriented design problems
+│   │   ├── shapehierarchy/     # Polymorphic shape class hierarchy
+│   │   ├── bankingsystem/      # Banking application class design
+│   │   ├── factorypattern/     # Factory pattern for payment methods
+│   │   ├── observerpattern/    # Observer pattern for newsletter system
+│   │   └── singleton/          # Singleton pattern with dependency injection
+│   │
 │   ├── datastructures/         # Data structure implementations (Coming soon)
-│   ├── oop/                    # Object-oriented design problems (Coming soon)
 │   └── systemdesign/           # System design challenges (Coming soon)
-Problem Categories
-Algorithms
+```
 
-String Reversal - Reverse a string
-Palindrome Checker - Check if a string is a palindrome
-Count Vowels - Count vowels in a string
-FizzBuzz - Classic FizzBuzz implementation
-Two Sum - Find indices of two numbers that add up to a target
-First Repeating Character - Find the first repeating character in a string
+## Problem Categories
 
-OOP Design (Coming Soon)
+### Algorithms
+1. **String Reversal** - Reverse a string
+2. **Palindrome Checker** - Check if a string is a palindrome
+3. **Count Vowels** - Count vowels in a string
+4. **FizzBuzz** - Classic FizzBuzz implementation
+5. **Two Sum** - Find indices of two numbers that add up to a target
+6. **First Repeating Character** - Find the first repeating character in a string
 
-Shape Hierarchy - Implement a polymorphic shape class hierarchy
-Banking System - Design classes for a banking application
-Factory Pattern - Implement payment methods using the Factory pattern
-Observer Pattern - Create a newsletter subscription system
-Singleton & Dependency Injection - Database connection pool implementation
+### OOP Design
+1. **Shape Hierarchy** - Implement a polymorphic shape class hierarchy
+2. **Banking System** - Design classes for a banking application
+3. **Factory Pattern** - Implement payment methods using the Factory pattern
+4. **Observer Pattern** - Create a newsletter subscription system
+5. **Singleton & Dependency Injection** - Database connection pool implementation
 
-Data Structures (Coming Soon)
+### Data Structures (Coming Soon)
+- Linked List - Implementation and operations
+- Stack & Queue - Implementation and applications
+- Binary Search Tree - Implementation and traversals
+- Graph - Representation and algorithms
+- Hash Table - Custom implementation
 
-Linked List - Implementation and operations
-Stack & Queue - Implementation and applications
-Binary Search Tree - Implementation and traversals
-Graph - Representation and algorithms
-Hash Table - Custom implementation
+### System Design (Coming Soon)
+- Rate Limiter - Design a rate limiting system
+- Microservice Communication - Design communication between microservices
+- Caching Layer - Implement a caching mechanism
+- URL Shortener - Design a URL shortening service
 
-System Design (Coming Soon)
+## Running the Challenges
 
-Rate Limiter - Design a rate limiting system
-Microservice Communication - Design communication between microservices
-Caching Layer - Implement a caching mechanism
-URL Shortener - Design a URL shortening service
-
-Running the Challenges
 List all available problems:
-bashCopy./interview-challenges list
+```bash
+./interview-challenges list
+```
+
 Run a specific algorithm problem:
-bashCopy./interview-challenges algorithms stringreversal "hello world"
+```bash
+./interview-challenges algorithms stringreversal "hello world"
 ./interview-challenges algorithms palindrome "racecar"
 ./interview-challenges algorithms countvowels "beautiful"
 ./interview-challenges algorithms fizzbuzz 15
 ./interview-challenges algorithms twosum "[2,7,11,15]" 9
 ./interview-challenges algorithms firstrepeatingcharacter "hello"
-Contributing
+```
+
+Run a specific OOP design problem:
+```bash
+./interview-challenges oop shapehierarchy
+./interview-challenges oop bankingsystem
+./interview-challenges oop factorypattern
+./interview-challenges oop observerpattern
+./interview-challenges oop singleton
+```
+
+## Contributing
+
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-Fork the repository
-Create your feature branch (git checkout -b feature/amazing-feature)
-Commit your changes (git commit -m 'Add some amazing feature')
-Push to the branch (git push origin feature/amazing-feature)
-Open a Pull Request
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

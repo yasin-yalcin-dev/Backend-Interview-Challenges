@@ -42,7 +42,7 @@ func main() {
 	case "algorithms":
 		RunAlgorithmProblem(problem, args)
 	case "oop":
-		fmt.Println("OOP problems are not implemented yet")
+		RunOOPProblem(problem, args)
 	case "datastructures":
 		fmt.Println("Data structure problems are not implemented yet")
 	case "systemdesign":
